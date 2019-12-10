@@ -1,9 +1,12 @@
 import Levenshtein
 import time
+from googleTranslate import *
 from ResourceData import *
 from SparqlSearch import *
 from gurobipy import *
 from nltk.corpus import wordnet as wn
+from nltk.tokenize import word_tokenize
+
 Zhfile = 'data/zh_triples.txt'
 Enfile = 'data/en_triples.txt'
 AlgnmentfileZE = 'data/zh_en_alignment.txt'
@@ -14,6 +17,7 @@ resourcePrexZh = "http://zh.dbpedia.org/resource/"
 propertyPrexZh = "http://zh.dbpedia.org/property/"
 EnRDF = "En_triple.rdf"
 ZhRDF = "Zh_triple.rdf"
+ThresHold=0.84
 EnResourceDic={}
 EnPropertyDic={}
 ZhResourceDic={}
@@ -82,8 +86,10 @@ def findSynonym(parse):#input the tokens of the question, output all the synonum
         synparse.add(i)
     return synparse
 
+
 class QA:
-    def __init__(self,question):
+    def __init__(self,question,pre):
+        self.predicts=pre
         self.question=question
         self.samePharse=[]
         self.Con1Set=[]
@@ -96,8 +102,13 @@ class QA:
     def analysisQuestion(self):
         ##deletePunc = re.sub(r'[^\w\s]', '', self.question)
         print('analyzing...')
-        parse0 = self.question.split()
-        parse=findSynonym(parse0)
+        parse = self.question.split()
+        # print('translating...')
+        # transToken=transSentence(self.question,'en2zh')
+        # print('trans done')
+        # for i in transToken:
+        #     parse.append(i)
+        #parse=findSynonym(parse0)
         candidateResource = []
         candidateProperty = []
         for p in parse:
@@ -108,7 +119,7 @@ class QA:
             canSame=[]
             for res in EnResourceDic.keys():
                 con = Levenshtein.ratio(res, p)
-                if con >= 0.84:  # the threshold in the paper
+                if con >= ThresHold:  # the threshold in the paper
                     num = num + 1
                     flag = False
                     for redata in candidateResource:
@@ -121,7 +132,7 @@ class QA:
                         canSame.append(new)
             for pro in EnPropertyDic.keys():
                 con = Levenshtein.ratio(pro, p)
-                if con >= 0.84:
+                if con >= ThresHold:
                     num = num + 1
                     flag = False
                     for prodata in candidateProperty:
@@ -135,7 +146,7 @@ class QA:
             for res in ZhResourceDic.keys():
                 # print(res)
                 con = Levenshtein.ratio(res, p)
-                if con >= 0.84:  # the threshold in the paper
+                if con >= ThresHold:  # the threshold in the paper
                     flag = False
                     num = num + 1
                     for redata in candidateResource:
@@ -148,7 +159,7 @@ class QA:
                         canSame.append(new)
             for pro in ZhPropertyDic.keys():
                 con = Levenshtein.ratio(pro, p)
-                if con >= 0.84:
+                if con >= ThresHold:
                     num=num+1
                     flag = False
                     for prodata in candidateProperty:
@@ -161,6 +172,22 @@ class QA:
                         canSame.append(new)
             if num > 1:  # judge if the pharse have two mapped resources
                 self.samePharse.append(canSame)
+
+        for part in self.predicts:
+            transpart=translate(part,'en2zh')
+            for zhpro in ZhPropertyDic.keys():
+                con = Levenshtein.ratio(zhpro, transpart)
+                if con>0.8:
+                    candidateProperty.append(ResourceData(zhpro, con, 1, 1))#find Chinese relation
+            p=part.split("'s")
+            parsepro=p[-1]
+            #print(parsepro)
+            prop=parsepro.replace(' ','')
+            print(prop)
+            for pro in EnPropertyDic.keys():
+                con = Levenshtein.ratio(pro, prop)
+                if con >= 0.8:
+                    candidateProperty.append(ResourceData(pro, con, 1,0))#find combined relation
         self.candidate = [candidateResource, candidateProperty]
         for i in candidateResource:
             i.print()
@@ -172,39 +199,39 @@ class QA:
     def generateTriple(self):
         res = self.candidate[0]
         pro = self.candidate[1]
-        erEnTriple = set()
-        erZhTriple = set()
+        erEnTriple =[]
+        erZhTriple =[]
         for en in res:
             if en.type==0 and en.resouce in EnResourceDic:
                 for p in pro:
                     if p.type==0 and p.resouce in EnResourceDic[en.resouce]:
                         triple = '<' + resourcePrexEn + en.resouce + '> <' + propertyPrexEn + p.resouce + "> ?V2"
-                        erEnTriple.add(TripleData([en, p], triple))
+                        erEnTriple.append(TripleData([en, p], triple))
             elif en.type==1:
                 for p in pro:
                     if p.type==1 and p.resouce in ZhResourceDic[en.resouce]:
                         triple = '<' + resourcePrexZh + en.resouce + '> <' + propertyPrexZh + p.resouce + "> ?V2"
-                        erZhTriple.add(TripleData([en, p], triple))
+                        erZhTriple.append(TripleData([en, p], triple))
 
         for p in pro:
             if p.type==0 and p.resouce in EnPropertyDic:
                 for en in res:
                     if en.type==0 and en.resouce in EnPropertyDic[p.resouce]:
                         triple = "?V1 <" + propertyPrexEn + p.resouce + "> <" + resourcePrexEn + en.resouce + '>'
-                        erEnTriple.add(TripleData([en, p], triple))
+                        erEnTriple.append(TripleData([en, p], triple))
             elif p.type==1:
                 for en in res:
                     if en.type==1 and en.resouce in ZhPropertyDic[p.resouce]:
                         triple = "?V1 <" + propertyPrexZh + p.resouce + "> <" + resourcePrexZh + en.resouce + '>'
-                        erZhTriple.add(TripleData([en, p], triple))
+                        erZhTriple.append(TripleData([en, p], triple))
 
 
             if p.type==0 and p.resouce in EnPropertyDic:
                 triple = "?V1 <" + propertyPrexEn + p.resouce + "> ?V2"
-                erEnTriple.add(TripleData([p], triple))
+                erEnTriple.append(TripleData([p], triple))
             if p.type==1 and p.resouce in ZhPropertyDic:
                 triple = "?V1 <" + propertyPrexZh + p.resouce + "> ?V2"
-                erZhTriple.add(TripleData([p], triple))
+                erZhTriple.append(TripleData([p], triple))
         self.erTriple = [erEnTriple, erZhTriple]
         # for i in erEnTriple:
         #     i.print()
@@ -232,7 +259,7 @@ class QA:
         #         ii.print()
 
     def alignmentByTable(self):
-        same = set()
+        same = []
         for t in self.erTriple[0]:  # English Triple
             # print(t)
             s = ''
@@ -270,7 +297,7 @@ class QA:
                 t.setanswer(s,2)
 
         # print("----------samecandidate-----------",sameCandidate)
-        totalTriple = self.erTriple[0] | self.erTriple[1]
+        totalTriple = self.erTriple[0] + self.erTriple[1]
         # for tt in totalTriple:
         #     print(tt.answer)
         for sc in list(itertools.combinations(totalTriple, 2)):
@@ -284,7 +311,7 @@ class QA:
                             if sa.sameLeft == a.sameLeft:
                                 f = 1
                         if f == 0:
-                            same.add(a)
+                            same.append(a)
                             con4.append(a)
                     if a2 in enSameAs and a1==enSameAs[a2]:
                         a = AlignmentData(a1, a2, 1)
@@ -293,7 +320,7 @@ class QA:
                             if sa.sameLeft == a.sameLeft:
                                 f = 1
                         if f == 0:
-                            same.add(a)
+                            same.append(a)
                             con4.append(a)
             if len(con4)>1:
                 self.Con4.append(con4)
@@ -524,18 +551,30 @@ class QA:
         return result
 
 if __name__=='__main__':
+    # print(Levenshtein.ratio('placeOfBirth','placeofbirth'))
     buildResourceDic()
     buildAlignmentDic()
-    # q=QA("What is the subclass of the genre that Blues_for_Elvis_–_King_Does_the_King's_Things belongs to")
+    # parse="the main religion of James_ Martin_ -LRB- Australian_ politician -RRB-'s place of death #the main religion #James_ Martin_ -LRB- Australian_ politician -RRB-'s place of death #James_ Martin_ -LRB- Australian_ politician -RRB-'s place #James_ Martin_ -LRB- Australian_ politician -RRB- #James_ Martin_ #Australian_ politician #death"
+    # aparse=parse.split('#')
+    # q=QA("What is the main religion of James_Martin_(Australian_politician)'s place of death",aparse)
     # print(q.FindAnswer())
+
     trainList = []
     with open('data/en_en_zh.txt', "r", encoding='UTF-8')as trainQuestion:
         for line in trainQuestion:
             route = line.split('@@@')
             tuple = (route[0], route[1], route[2])
             trainList.append(tuple)
-    for tp in trainList:
-        q=QA(tp[0])
+    preList=[]
+    with open('data/question_predicate'
+              's.txt','r',encoding='UTF-8')as pre:
+        for line in pre:
+            parse=line.split('#')
+            preList.append(parse)
+
+    for i in range(0,len(trainList)):
+        tp=trainList[i]
+        q=QA(tp[0],preList[i])
         answer=q.FindAnswer()
         records=''
         #-2 is ILP model infeasible
@@ -554,5 +593,6 @@ if __name__=='__main__':
             records=' 1   '+r
         else:
             records=' 0   '+r
-        with open('performance_record(synonym).txt', "a", encoding='UTF-8')as record:
+        with open('performance_record(stanfordParse).txt', "a", encoding='UTF-8')as record:
             record.write(records)
+
