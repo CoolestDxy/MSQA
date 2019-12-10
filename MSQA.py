@@ -172,13 +172,14 @@ class QA:
                         canSame.append(new)
             if num > 1:  # judge if the pharse have two mapped resources
                 self.samePharse.append(canSame)
-
-        for part in self.predicts:
-            transpart=translate(part,'en2zh')
+        transparts = transPredicts(self.predicts, 'en2zh')
+        for transpart in transparts:
             for zhpro in ZhPropertyDic.keys():
                 con = Levenshtein.ratio(zhpro, transpart)
-                if con>0.8:
-                    candidateProperty.append(ResourceData(zhpro, con, 1, 1))#find Chinese relation
+                if con > 0.8:
+                    candidateProperty.append(ResourceData(zhpro, con, 1, 1))  # find Chinese relation
+        for part in self.predicts:
+
             p=part.split("'s")
             parsepro=p[-1]
             #print(parsepro)
@@ -572,7 +573,7 @@ if __name__=='__main__':
             parse=line.split('#')
             preList.append(parse)
 
-    for i in range(0,len(trainList)):
+    for i in range(51,len(trainList)):
         tp=trainList[i]
         q=QA(tp[0],preList[i])
         answer=q.FindAnswer()
@@ -593,6 +594,6 @@ if __name__=='__main__':
             records=' 1   '+r
         else:
             records=' 0   '+r
-        with open('performance_record(stanfordParse).txt', "a", encoding='UTF-8')as record:
+        with open('performance_record(NewstanfordParse).txt', "a", encoding='UTF-8')as record:
             record.write(records)
 
