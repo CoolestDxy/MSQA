@@ -5,10 +5,6 @@ class ResourceData:
         self.confidence=confidence
         self.frequency=frequency
         self.type=type
-    def equal(self,p):
-        if self.type==p.type and self.resouce==p.resouce:
-            return True
-        return False
     def print(self):
         print(self.resouce, self.confidence, self.frequency)
 
@@ -27,6 +23,10 @@ class TripleData:
         self.leftalignment = set()
         self.rightalignment =set()
         self.pairalignment=set()
+        self.lanswer=[]
+        self.ranswer=[]
+
+
     def setanswer(self,a,type):
         self.answerType=type
         if type==0:
@@ -36,6 +36,8 @@ class TripleData:
         if type==2:
             self.pairanswer=a
             for an in a:
+                self.lanswer.append(an[0])
+                self.ranswer.append(an[1])
                 self.answer.append(an[0])
                 self.answer.append(an[1])
 
@@ -80,14 +82,17 @@ class AlignmentData:
         self.type='alignment'
         self.leftTriple=set()
         self.rightTriple=set()
+
+    def __eq__(self, other):
+        return (self.sameLeft==other.sameLeft and self.sameRight==other.sameRight)or(self.sameLeft==other.sameRight and self.sameRight==other.sameLeft)
     def print(self):
         print(self.sameLeft+" sameas "+self.sameRight)
         # print('lefttriple:')
         # for i in self.leftTriple:
-        #     print(i.tripleQuery)
+        #     print(i)
         # print('righttriple')
         # for j in self.rightTriple:
-        #     print(j.tripleQuery)
+        #     print(j)
 
 if __name__=="__main__":
     a=set()

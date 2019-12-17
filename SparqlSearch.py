@@ -18,7 +18,7 @@ class SparqlSearch:
                 filt = self.rule.findall(str(ll))
                 for f in filt:
                     result.append(f.split('/')[-1])
-            # print("EN search result! ", s, result)
+            #print("EN search result! ", s, result)
         if type == 1:  # Zh
             search = "select " + v + " where{" + s + "}"
             l = list(self.Zhgraph.query(search))
@@ -26,7 +26,7 @@ class SparqlSearch:
                 filt = self.rule.findall(str(ll))
                 for f in filt:
                     result.append(f.split('/')[-1])
-            # print("CN search result! ", s, result)
+            #print("CN search result! ", s, result)
         return result
 
     def searchPair(self,s,v,type):
@@ -42,7 +42,7 @@ class SparqlSearch:
                 filtpair.append(p0)
                 filtpair.append(p1)
                 result.append(filtpair)
-            # print("search result! ", s, result)
+            print("search result! ", s, result)
             return result
         if type==1:#CN
             search = "select " + v + " where{" + s + "}"
@@ -55,6 +55,6 @@ class SparqlSearch:
                 filtpair.append(p0)
                 filtpair.append(p1)
                 result.append(filtpair)
-            # print("search result! ", s, result)
+            print("search result! ", s, result)
             return result
 

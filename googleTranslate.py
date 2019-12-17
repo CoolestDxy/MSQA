@@ -8,8 +8,7 @@ import re
 import urllib.request
 import HandleJs
 from HandleJs import Py4Js
-import Levenshtein
-import nltk
+from langconv import *
 
 def open_url(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
@@ -47,9 +46,10 @@ def translate(content, trans_direction):
 def transPredicts(p,d):
     results=[]
     for ps in p:
-        results.append(translate(ps,d))
+        trans=translate(ps,d)
+        complexTrans=Converter('zh-hant').convert(trans)
+        results.append(trans)
+        results.append(complexTrans)
     return results
 
 
-print(translate('the main religion','en2zh'))
-print(Levenshtein.ratio('代表作品','代表作'))

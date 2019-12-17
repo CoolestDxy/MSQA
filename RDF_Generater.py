@@ -1,4 +1,5 @@
 import rdflib
+import argparse
 import re
 resourcePrexEn="http://dbpedia.org/resource/"
 propertyPrexEn="http://dbpedia.org/property/"
@@ -85,9 +86,9 @@ def buildZhRDFKB():
             if i%10000==0:
                 print("build ",i)
         graph.serialize("zh_triple.rdf")
-def buildMyZhRDFKB():
+def buildMyZhRDFKB(file):
     graph = rdflib.Graph()
-    with open("data/zh_triples.txt", "r",encoding='UTF-8') as enTriple:
+    with open(file, "r",encoding='UTF-8') as enTriple:
         for line in enTriple:
             line=line.strip('\n')
             sparse_line=line.split('@@@')
@@ -97,9 +98,9 @@ def buildMyZhRDFKB():
             graph.add((entity1, relation, entity2))
     graph.serialize("Zh_triple.rdf")
 
-def buildMyEnRDFKB():
+def buildMyEnRDFKB(file):
     graph = rdflib.Graph()
-    with open("data/en_triples.txt", "r",encoding='UTF-8') as enTriple:
+    with open(file, "r",encoding='UTF-8') as enTriple:
         for line in enTriple:
             line=line.strip('\n')
             sparse_line=line.split('@@@')
@@ -109,12 +110,6 @@ def buildMyEnRDFKB():
             graph.add((entity1, relation, entity2))
     graph.serialize("En_triple.rdf")
 
-def sparqlTest():
-    g = rdflib.Graph()
-    g.parse("zh_triple.rdf", format="xml")
-    search="select ?Q where{<http://zh.dbpedia.org/resource/杜昕昱> <http://zh.dbpedia.org/property/玩> ?Q}"
-    l=list(g.query(search))
-    print(l)
 
 def sparQLSearch(s,v,file):
     rule=re.compile('\'(.*?)\'')
@@ -150,13 +145,20 @@ def sparqlPairSearch(s,v,file):
     return result
 
 if __name__=='__main__':
-    #sparQLSearch('?V1 <http://dbpedia.org/property/birthPlace> <http://dbpedia.org/resource/Vanua_Balavu>','?V1','En_triple.rdf')
-    trainList=[]
-    with open('data/en_en_zh.txt', "r",encoding='UTF-8')as trainQuestion:
-        for line in trainQuestion:
-            route=line.split('@@@')
-            tuple=(route[0],route[1],route[2])
-            trainList.append(tuple)
-    print('tuple done')
-    for i in range(10):
-        print(trainList[i])
+    parser=argparse.ArgumentParser()
+    parser.description='build RDF'
+    parser.add_argument('--zh',help='ZHKB file path')
+    parser.add_argument('--en',help='ENKB file path')
+    args=parser.parse_args()
+    if args.zh:
+       print('building zh_triple.rdf...')
+       buildMyZhRDFKB(args.zh)
+       print('done.')
+    elif args.en:
+        print('building en_triple.rdf...')
+        buildMyEnRDFKB(args.en)
+        print('done.')
+    # buildMyZhRDFKB('./dataset/zh_triples.txt')
+    # buildMyEnRDFKB('./dataset/en_triples.txt')
+
+
