@@ -6,8 +6,10 @@ class SparqlSearch:
     def __init__(self):
         self.Zhgraph=rdflib.Graph()
         self.Engraph=rdflib.Graph()
-        self.Zhgraph.parse('zh_triple.rdf')
+        #self.Frgraph=rdflib.Graph()
+        self.Zhgraph.parse('Zh_triple.rdf')
         self.Engraph.parse('En_triple.rdf')
+        #self.Frgraph.parse('Fr_triple.rdf')
         self.rule = re.compile('\'(.*?)\'')
     def search(self,s,v,type):
         result =[]
@@ -27,6 +29,13 @@ class SparqlSearch:
                 for f in filt:
                     result.append(f.split('/')[-1])
             #print("CN search result! ", s, result)
+        if type == 2:  # Fr
+            search = "select " + v + " where{" + s + "}"
+            l = list(self.Frgraph.query(search))
+            for ll in l:
+                filt = self.rule.findall(str(ll))
+                for f in filt:
+                    result.append(f.split('/')[-1])
         return result
 
     def searchPair(self,s,v,type):
@@ -42,7 +51,7 @@ class SparqlSearch:
                 filtpair.append(p0)
                 filtpair.append(p1)
                 result.append(filtpair)
-            print("search result! ", s, result)
+            #print("search result! ", s, result)
             return result
         if type==1:#CN
             search = "select " + v + " where{" + s + "}"
@@ -55,6 +64,19 @@ class SparqlSearch:
                 filtpair.append(p0)
                 filtpair.append(p1)
                 result.append(filtpair)
-            print("search result! ", s, result)
+            #print("search result! ", s, result)
+            return result
+        if type == 2:  # Fr
+            search = "select " + v + " where{" + s + "}"
+            l = list(self.Frgraph.query(search))
+            for pair in l:
+                pair = list(pair)
+                filtpair = []
+                p0 = pair[0].split('/')[-1]
+                p1 = pair[1].split('/')[-1]
+                filtpair.append(p0)
+                filtpair.append(p1)
+                result.append(filtpair)
+            #print("search result! ", s, result)
             return result
 

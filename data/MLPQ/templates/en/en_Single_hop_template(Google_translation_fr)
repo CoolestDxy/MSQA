@@ -1,0 +1,230 @@
+succeededBy	Qu'est-ce que le successeur de l'entity?
+afterElection	Qui est élu candidat après entity?
+series	À quelle série appartient cette entity?
+marketingTarget	Qu'est-ce que la cible marketing de l'entity?
+shipCountry	À quel pays appartient cette entity?
+blank2NameSec	
+background	Qu'est-ce que le contexte de l'entity?
+locationCity	Dans quelle ville se trouve cette entity?
+almaMater	Qu'est-ce que l'alma mater d'entity?
+type	Quel est le type d'entity?
+utcOffsetDst	Combien du décalage UTC de l'entity?
+city	Dans quelle ville se trouve cette entity?
+screenshot	Qu'est-ce que le fichier de capture d'écran de l'entity?
+unrankedDivisio	Qu'est-ce qu'une division d'entity non classée?
+family	Qu'est la famille d'entity?
+os	Qu'est-ce que le système d'opertaion d'entity?
+genre	Quel est le genre d'entity?
+elevationMinM	Qu'est-ce que l'élévation minimale de l'entity?
+network	Quel est le réseau sur lequel l'entity fonctionne?
+topgame	Qu'est le meilleur jeu d'entity?
+leaderTitle	Quel est le titre de leader de l'entity?
+northwest	Qu'est-ce qui est situé au nord-ouest de l'entity?
+starring	Quel est le rôle de cette entity?
+appointer	Qui est le nom de l'entity?
+lowerHouse	Qu'est-ce que la chambre basse de l'entity?
+constell	Quelle est la constellation d'entity?
+utcOffset	Combien du décalage UTC de l'entity?
+intercommunality	Qu'est-ce que l'intercommunalité d'entity?
+insee	Qu'est-ce que le code postal de l'entity?
+seat	Quelle est la ville captive de l'entity?
+director	Qui est le directeur de l'entity?
+stadium	Quel est le stade où se déroule l'entity?
+star	Quelle est la planète d'origine de l'entity?
+latestReleaseVersion	Qu’est-ce que la dernière version de l'entity?
+album	Qu'est-ce que l'album d'entity?
+familia	À quelle famille appartient cette entity?
+source	Qu'est-ce que la source de l'entity?
+unrankedClassis	Qu'est-ce qu'une classification non classée d'entity?
+name	Qu'est-ce que le nom de l'entity?
+leaderParty	Quel est le parti leader de l'entity?
+dépt	Quel est le département d'entity?
+subsid	De quoi l'entity est-elle une subvention?
+landscape	Quelle est la situation de l'entity?
+states	Dans quel état se trouve l'entity?
+origin	Qu'est-ce que l'origine de l'entity?
+products	Qu'est-ce que le produit de l'entity?
+icon	Qu'est-ce que le fichier de l'icône de l'entity?
+counties	Dans quel comté se trouve cette entity?
+ordo	Qu'est-ce que l'ordo d'entity?
+classis	Qu'est-ce que la classification d'entity?
+license	Qu'est-ce que la licence d'entity?
+d	Qu'est-ce que d d'entity?
+singleLine	Qu'est-ce que la ligne d'entity unique?
+logoSize	Combien de la taille du logo de l'entity?
+display	Quel est le dispositif d'affichage de l'entity?
+map	Qu'est-ce que la carte de l'entity?
+partsType	Quel est le type d'entity des pièces?
+department	Où est le département d'entity?
+arrondissement	Qu'est-ce qu'un arrondissement d'entity?
+nationalOrigin	De quel pays est originaire l'entity?
+before	Qu'est-ce qui est devant l'entity?
+subGenre	À quel sous-genre appartient cette entity?
+areaServed	Qu'est-ce qu'un domaine que l'entity dessert?
+parent	Quel est parent de l'entity?
+term	Qu'est-ce que le terme d'entity?
+unrankedOrdo	Qu'est-ce que l'ordo d'entity non classé?
+citizenship	Qu'est-ce que la citoyenneté de l'entity?
+upperHouse	Qu'est-ce que la chambre haute de l'entity?
+latd	Qu'est-ce que latd d'entity?
+subdivisionName	Qu'est-ce que le nom de subdivision de l'entity?
+programmingLanguage	Quel est le langage de programmation dans lequel cette entity est écrite?
+allegiance	Qu'est-ce que l'allégeance de l'entity?
+subdivisionType	Quel est le type de subdivision de l'entity?
+developer	Qui est le développeur de l'entity?
+region	À quelle région appartient cette entity?
+author	Qui est l'auteur de l'entity?
+leader	Qui est le leader de l'entity?
+coordinatesDisplay	Qu'est-ce que coordonnées Di affichent l'entity?
+v	Qu'est-ce que v d'entity?
+owner	Qui est le propriétaire de l'entity?
+commons	Qu'est-ce que la banalité de l'entity?
+successor	Qui est le successeur de l'entity?
+league	Quelle est la ligue de l'entity?
+imageFlag	Qu'est-ce qu'un drapeau d'image d'entity?
+locationCountry	Dans quel pays cette entity est-elle située?
+producer	Qui est le producteur de l'entity?
+north	Qu'est-ce qui se trouve au nord de l'entity?
+areaTotalKm	Combien de superficie kmn d'entity?
+wikt	Qu'est-ce que l'entity?
+cheflieu	Qu'est-ce que cheflieu d'entity?
+residence	Où est la résidence de l'entity?
+titlestyle	Quel est le titlestyle de l'entity?
+imageSize	Combien de la taille d'image de l'entity?
+birthDate	Quelle est la date de naissance de l'entity?
+mapCaption	Qu'est-ce que la légende de la carte de l'entity?
+west	Qu'est-ce qui se trouve à l'ouest de l'entity?
+foundation	Où est la fondation de l'entity?
+channel	À quelle chaîne de télévision appartient cette entity?
+pastMembers	Qui était membre d'une entity dans le passé?
+headquarters	Où se trouve le siège social de cette entity?
+storage	Qu'est-ce que le stockage d'entity?
+distributor	Qui est le distributeur de l'entity?
+postalCodeType	Quel type de code postal cette entity utilise-t-elle?
+voy	Qu'est-ce que le voy of entity?
+nativeName	Quel est le nom natif de l'entity?
+keyPeople	Qui est le PDG de l'entity?
+district	Quel est le district d'entity?
+primeminister	Qui est le premier ministre de l'entity?
+q	Qu'est-ce que le q d'entity?
+writer	Qui est l'auteur de l'entity?
+versionOf	Quelle est la version de l'entity?
+registry	Qu'est-ce que le registre d'entity?
+east	Qu'est-ce qui se trouve à l'est de l'entity?
+designer	Qui est concepteur d'entity?
+populationDensityKm	Combien de la population kmn de l'entity?
+birthPlace	Où est le lieu de naissance de l'entity?
+generation	Qu'est-ce que la génération d'entity?
+northeast	Qu'est-ce qui se trouve au nord-est de l'entity?
+southeast	Qu'est-ce qui se trouve au sud-est de l'entity?
+sovereigntyType	Quel est le type d'entity souveraineté?
+south	Qu'est-ce qui se trouve au sud de l'entity?
+locale	Quel est l'emplacement de l'entity?
+manufacturer	Quel est le fabricant d'entity?
+url	Quelle est l'URL de l'entity?
+southwest	Qu'est-ce qui se trouve au sud-ouest de l'entity?
+artist	Qui est l'artiste d'entity?
+longew	Qu'est-ce que la longévité de l'entity?
+phylum	Qu'est-ce que le phylum d'entity?
+nationality	Quelle est la nationalité de l'entity?
+sponsor	Qui est le sponsor de l'entity?
+cpu	Quel est le CPU de l'entity?
+settlementType	Quel est le type de règlement d'entity?
+placeOfDeath	Quel est le lieu de décès de l'entity?
+operator	Qu'est-ce qu'un opérateur d'entity?
+timezone1Dst	Quel est le fuseau horaire de l'entity?
+legislature	Quelle est la législature de l'entity?
+exoplanet	Qu'est-ce que l'exoplanète d'entity?
+imageCaption	Quelle est légende d'image d'entity?
+coordinatesRegion	Quelles sont les coordonnées regionn de l'entity?
+shortDescription	Qu'est-ce qu'une brève description de l'entity?
+rég	Qu'est-ce que le rég of entity?
+platforms	Quelle est la plateforme d'entity?
+longitude	Quelle est la longitude de l'entity?
+regnum	Qu'est-ce que le regnum d'entity?
+youthclubs	À quel club de jeunesse appartenait cette entity?
+town	Dans quelle ville se trouve cette entity?
+longd	Qu'est-ce qu'une entity longue?
+latns	Qu'est-ce que les latns d'entity?
+company	Quelle est la société d'entity?
+populationDate	Quelle est la date de population de l'entity?
+currentclub	Dans quel club appartient cette entity?
+b	Qu'est-ce que b d'entity?
+nationalteam	Pour quelle équipe nationale l'entity joue-t-elle avant 20 ans?
+mayor	Qui est le maire de l'entity?
+label	Qu'est-ce que le label d'enregistrement qui a fait l'entity?
+yearsActive	Quelle est l'année active d'entity?
+populationTotal	Combien de la population totale de l'entity?
+areaKm	Combien de la superficie km de l'entity?
+studio	Quel est le studio qui a fait l'entity?
+precededBy	Qu'est-ce que le prédécesseur de l'entity?
+website	Quel est le site Web de l'entity?
+borough	Dans quel quartier se trouve cette entity?
+imageSkyline	Qu'est-ce que la ligne d'horizon de l'image de l'entity?
+latm	Quelle est la durée d'entity?
+clubs	Qu'est-ce que le club d'entity?
+compatibility	Qu'est-ce qu'un produit d'entity compatible?
+s	Qu'est-ce que l'entity?
+format	Qu'est-ce que le format de l'entity?
+capital	Qu'est-ce que le capital de l'entity?
+imageShield	Qu'est-ce que le bouclier d'image de l'entity?
+creatorcode	Quel est le code créateur d'entity?
+timezoneDst	Quel est le fuseau horaire de l'entity?
+released	À quelle heure est de sortie de l'entity?
+blank1NameSec	Quel ec sec secn de l'entity?
+draftTeam	Quelle est l'équipe de projet de l'entity?
+president	Qui est le président de l'entity?
+caption	Qu'est-ce que la légende de l'entity?
+logo	Quel est le logo de l'entity?
+founder	Qui est le fondateur de l'entity?
+placeOfBirth	Quel est le lieu de naissance de l'entity?
+beforeElection	Qui est le leader devant l'entity?
+longm	Qu'est-ce qu'une entity longue?
+timezone	Quel est le fuseau horaire de l'entity?
+currentMembers	Qui est le leader actuel du groupe d'entity?
+predecessor	Qui est le prédécesseur de l'entity?
+elevationMaxM	Combien de l'élévation maximale de l'entity?
+industry	Quelle est l'industrie de l'entity?
+state	Dans quel état se situe l'entity?
+numEmployees	Combien du nombre d'employés de l'entity?
+subordo	Qu'est-ce qu'un sous-ordre d'entity?
+onlineservice	Qu'est-ce que le service en ligne d'entity?
+species	Quelle est l'espèce d'entity?
+cover	Quelle est la couverture de l'entity?
+workingState	Quel est l'état de fonctionnement de l'entity?
+ui	Qu'est-ce que l'interface utilisateur de l'entity?
+publisher	Qui est l'éditeur d'entity?
+music	Quelle musique l'entity fait-elle?
+title	Qu'est-ce que le titre de l'entity?
+basinCountries	Dans quel pays se trouve le bassin de l'entity?
+branch	Quelle est la branche de l'entity?
+language	Quelle langue parle cette entity?
+rev	Qu'est-ce que le rev of entity?
+after	Qui est le successeur de l'entity?
+location	Quel est l'emplacement de l'entity?
+latitude	Quelle est la latitude de l'entity?
+leaderName	Comment s'appelle du dirigeant de l'entity?
+religion	Quelle est la religion de l'entity?
+elevationM	Combien de l‘elevation d'entity?
+deathPlace	Quel est le lieu de décès de l'entity?
+postalCode	Quel est le code postal de l'entity?
+n	Qu'est-ce que n d'entity?
+area	Quelle est la zone dans laquelle se trouve cette entity?
+imageMap	Qu'est-ce que la carte d'image de l'entity?
+associatedActs	Qui est l'acteur associé à l'entity?
+country	Quel est le pays où existe une entity?
+date	Quelle est la date de l'entity?
+operatingSystem	Qu'est-ce que le système d'exploitation de l'entity?
+canton	Dans quel canton se situe cette entity?
+province	À quelle province appartient cette entity?
+fromAlbum	De quel album provient cette entity?
+revenue	Quelle est la devise que l'entity utilise pour ses revenus?
+seatType	Quelle est la ville captive de l'entity?
+party	À quel parti politique appartient cette entity?
+populationAsOf	Quelle est la population en tant qu'entity?
+population	Combien de la population de l'entity?
+packageManager	Qui est le gestionnaire de packages de l'entity?
+dateOfBirth	Quelle est la date de naissance de l'entity?
+county	Qu'est-ce que le comté d'entity?
+homepage	Qu'est-ce que la page d'accueil de l'entity?
+unitPref	Quelle est l'unité pref utilisée dans l'entity?

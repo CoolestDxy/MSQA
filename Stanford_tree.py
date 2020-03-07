@@ -88,7 +88,7 @@ def rewrite_Rule(line):
 def parse_tree(sentence,lan):
     sentence = sentence.replace('实体','entity')
     sentence = sentence.replace('entité','entity')
-    nlp = StanfordCoreNLP(r'E:\dxy\lab\Mulyi-Source_Training\MyModel\stanfordParser\stanford-corenlp-full-2018-10-05',lang=lan)
+    nlp = StanfordCoreNLP(r'E:\dxy\lab\Mulyi-Source_Training\MyModel\stanfordParser\stanford-corenlp-full-2015-12-09',lang=lan)
     tree = nlp.parse(sentence)
     #print(tree)
     tree = tree.replace('(','( ')
@@ -252,7 +252,7 @@ def SaveKeyPath(QALD_9_Train,QALD_9_Test,lan):
 def extract_WH(QALD_9_Train,QALD_9_Test,lan):
     trainset = QuestionEextract('qald-9-train-multilingual.json')[1:]         
     testset = QuestionEextract('qald-9-test-multilingual.json')[1:]   
-    nlp = StanfordCoreNLP(r'/home/yiming/workspace/program/stanford-corenlp-full-2018-10-05/',lang=lan)
+    nlp = StanfordCoreNLP(r'/home/yiming/workspace/program/stanford-corenlp-full-2015-12-09/',lang=lan)
     new = open('WH_.txt','w')
     WH_label = ['WDT','WP','WP$','WRB']
     VB_label = ['VBD','VBZ','JJ','RB']

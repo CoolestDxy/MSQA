@@ -1,0 +1,201 @@
+production	Quel est le producteur de l'entity
+légende	Quelle est la légende de l'entity
+devise	Quelle est la devise de l'entity
+type	Quel est le type d'entity
+bassinCollecteur	Quelle est la zone de chalandise de l'entity
+siège	Où est située l'entity
+secteursD'activités	Quelle est l'activité principale de l'entity
+titre	Quelle est la bibliographie principale de l'entity
+éditeur	Quel est l'éditeur de l'entity
+wikinews	Qu'est-ce que Wikinews pour l'entity
+championnatActuel	Quel est le championnat de ligue le plus proche de l'entity
+genre	Quelle est la catégorie de l'entity
+sud	Quelle est la ville adjacente au sud de l'entity
+réalisation	Qui est le directeur de l'entity
+blason	Quel est le blason de l'entity
+dateDeNaissance	Quelle est la date de naissance de l'entity
+enregistréLieu	Où est le lieu de publication de l'entity
+génération	Quelle génération appartient à l'entity
+lang	Quelle langue est utilisée par l'entity
+nationalité	Quel est le pays d'origine de l'entity
+dateDePremièreVersion	Quel est le temps de sortie de la première entity
+vainqueur	Quelle est l'équipe gagnante de l'entity
+album	Quel est l'album de l'entity
+annéePop	Quelle est l'année démographique la plus récente de l'entity
+source	Où est l'origine de l'entity
+wikiquote	Quel est le wikiquote de l'entity
+nom	Quel est l'alias de l'entity
+versionSuivante	Quelle est la prochaine version de l'entity
+wiktionaryTitre	Quel est le titre de l'entity
+nordEst	Quelle est la ville adjacente au nord-est de l'entity
+est	Quelle est la ville adjacente à l'est de l'entity
+drapeau	Quelle est la bannière de l'entity
+sudEst	Quelle est la ville adjacente au sud-est de l'entity
+dépt	Quelle est la zone où se trouve l'entity
+sociétéMère	Quelle est la société mère de l'entity
+dateDeCréation	Quel est le temps de création de l'entity
+villeArrivee	Quelle est la ville finale de l'entity
+année	Quel a été le temps de création de l'entity
+lieuparutionOrig	Où l'édition originale a-t-elle été publiée
+premièreVersion	Quel est le numéro de version de l'entity d'origine
+site	Quelle est l'adresse Web de l'entity
+description	Quel est l'article décrivant l'entity
+dernièreVersionStable	Quelle est la dernière version stable de l'entity
+singlePrécédent	Quelle est l'entity unique
+rattachement	Qu'est-ce que le rattachement d'une entity
+constellation	Quelle est la constellation de l'entity
+plusGrandeVille	Quelle est la plus grande ville de l'entity
+fabricant	Quel est le fabricant de l'entity
+arrondissement	Quelle est la zone administrative où se trouve l'entity
+paysDeRésidence	Quel est le pays de résidence de l'entity
+langues	Quelle est la langue de l'entity
+commonsTitre	Quel est le titre commun de l'entity
+auteur	Qui est l'auteur de l'entity
+wikispecies	Quelles sont les wikispécies de l'entity
+online	Quel est le service en ligne de l'entity
+fr	
+personnagesClés	Qui est la personne clé de l'entity
+père	Qui est le père de l'entity
+v	Quel est le v de l'entity
+trad	Qui est le traducteur de l'entity
+début	Quelle est l'heure de début de l'entity
+département	où l'entity appartient
+gentilé	Quel est le titre résident de l'entity
+domaineInternet	Quel est le nom de domaine Internet de l'entity
+lieuDeNaissance	Où est le lieu de naissance de l'entity
+siège(ville)_	Où est le siège de l'entity
+dernièreVersionAvancée	Quelle est la dernière version de l'entity
+commons	Quels sont les biens communs de l'entity
+villeDepart	Où est le point de départ de l'entity
+légendeBlason	Quel est le badge de l'entity
+albumSuivant	Quel est le prochain album après l'entity
+produits	Quel est le nom du produit de l'entity
+typeDeNoyau	Quel est le type principal d'entity
+conjoint	Qui est le conjoint de l'entity
+charte	Quel est le graphique de l'entity
+monnaie	Quelle est la devise de l'entity
+singleSuivant	Quel est le prochain single après l'entity
+étatDesSources	Quel est le statut open source de l'entity
+formeJuridique	Quelle est la forme juridique d'une entity
+capitale	Où est le capital de l'entity
+dateDeDernièreVersionAvancée	Quand la dernière version de l'entity est-elle publiée?
+état	Quel est l'état de l'entity
+méthodeDeMiseÀJour	Quelle est la méthode de mise à jour de l'entity
+pays	À quel pays l'entity appartient-elle
+albumPrécédent	Quel était le dernier album d'entity
+organisateur	Quelle est l'organisation de l'entity
+lieu	quel est le lieu de l'entity
+district	Où se trouve le district fédéral de l'entity
+villeDeNaissance	Dans quelle ville l'entity est-elle née
+subdivision	Quelle est la province de l'entity
+cp	Quel est le code postal de l'entity
+légendeDrapeau	Quelle est la bannière de l'entity
+prédécesseur	Qui était l'entity précédente
+gouverneur	Qui est le gouverneur de l'entity
+monarque	qui est le monarque de l'entity
+superficie	Quelle est la superficie de l'entity
+wiktionary	Quel est le Wiktionnaire de l'entity
+producteur	Qui est le producteur de l'entity
+étatDuProjet	Quel est le statut du projet de l'entity
+url	Quelle est l'URL de l'entity
+sorti	Quel est le temps de sortie de l'entity
+développeur	Quelle est l'équipe de développement de l'entity
+série	Quelle est la série à laquelle appartient l'entity
+interfaceUtilisateur	Quelle est l'interface utilisateur par défaut de l'entity
+cpu	Quel est le processeur de l'entity
+régions	Quelle est la zone passée par l'entity
+siège(pays)_	Quel est le pays de l'entity
+équipementSportif	Quel est le stade de l'entity
+typeGouvernement	Quel est le type de gouvernement de l'entity
+rég	Quelle est la zone où se trouve l'entity
+directionActuelle	Qui est l'exécuteur testamentaire actuel de l'entity
+plateForme	Quelle est la plateforme de publication de l'entity
+pointCulminant	Où est la plus haute altitude de l'entity
+équipe	Quelle est l'équipe d'orientation de l'entity
+dateDeDernièreVersionStable	Quelle est la date de sortie de la dernière version stable de l'entity
+commune	Quelle est la commune de l'entity
+préfecture	Quel est le comté auquel l'entity appartient
+longitude	Quelle est la longitude de l'entity
+parti	Quelle est la partie de l'entity
+wikiversity	Quelle est la wikiversité de l'entity
+siteWeb	Quel est le site Web de l'entity
+b	
+maire	Qui est le maire de l'entity
+land	Quel est l'état de l'entity
+label	Quelle est la maison de disques à laquelle appartient l'entity
+paysD'origine	Quel est le pays d'origine de l'entity
+localisation	Quelle est la zone où se trouve l'entity
+lieuDeDécès	Où l'entity est-elle morte?
+colonnes	
+wikivoyage	Quel est le wikivoyage de l'entity
+paysDeNaissance	Quel est le pays de naissance de l'entity
+profession	Quelle est l'occupation de l'entity
+division	Quelle est la région à laquelle l'entity appartient
+président	Qui est le président de l'entity
+couleurBoîte	
+dateDeDécès	Quelle est la date du décès de l'entity
+chefLieu	Où se trouve le centre administratif de l'entity
+équipeDraftLnh	Quelle est l'équipe de projet LNH de l'entity
+maisonDeDisques	Qu'est-ce que la maison de disques d'une entity
+média	Quel est le support médiatique de l'entity
+format	Quel est le format utilisé par l'entity
+versionPrécédente	Quelle était la version précédente de l'entity
+successeur	Qui est le successeur de l'entity
+contrôleurs	Quel est le contrôleur de l'entity
+hymneNational	Quel est l'hymne national d'une entity
+franchiseDraft	Quelle est l'équipe de projet de l'entity
+nomDeNaissance	Quel est le nom de naissance de l'entity
+interfaceGraphique	Quel est l'environnement de bureau de l'entity
+logo	Quel est le fichier Logo de l'entity
+région	Quelle est la région de l'entity
+filiale	Quelle est la filiale de l'entity
+ville	Quelle est la plus grande ville de l'entity
+sport	Quel est le sport de l'entity
+fondateur	Qui est le fondateur de l'entity
+filiales	Quelle est la filiale de l'entity
+profession(s)_	Quelle est l'occupation de l'entity
+imageloc	quelle est l'image de l'entity
+statut	Quelle est la nature commerciale de l'entity
+sudOuest	Quelle est la place au sud-ouest de l'entity
+paysDeDécès	Où est le pays où l'entity est décédée
+clubJunior	Quel est le nom de l'équipe professionnelle des jeunes de l'entity
+nomEtLogo	Quel est le logo de l'entity
+annéesActives	Quel est l'âge actif de l'entity
+origine	Quelle est l'origine de l'entity
+tenant	Qui est le champion de l'entity
+arr	Quelle est la zone où se trouve l'entity
+chaîne	Quelle est la chaîne de diffusion d'origine de l'entity
+wikibooks	Quels sont les wikibooks de l'entity
+liste	Quelle est la liste contenant les entitys
+precJul	Quelle est la quantité de précipitations en juillet pour l'entity
+licence	Quelle est la licence de l'entity
+langue	Quelle langue est prise en charge par l'entity
+altitude	Quelle est l'altitude de l'entity
+exMembres	Qui est l'ancien membre de l'entity
+après	Quel est l'acteur qui succède au rôle joué par l'entity
+latitude	Quelle est la latitude de l'entity
+religion	Quelle est la religion de la croyance de l'entity
+surnom	Quel est l'alias de l'entity
+effectif	Quelle est la création de l'entity
+publicCible	Quel est le public de l'entity
+date	Quelle est la première occurrence de l'entity
+comarque	Où se trouve le quartier Comalca de l'entity
+province	dans quelle province est l'entity
+texte	
+propriétaire	Qui est le propriétaire de l'entity
+lieuDeMort	Où est la mort de l'entity
+avant	Qui était l'entity précédente
+jeuPhare	Quel est le jeu d'entity le plus vendu
+population	Quelle est la taille de la population de l'entity
+ouest	Quelle est la zone adjacente à l'ouest de l'entity
+artiste	Qui est l'artiste de l'entity
+famille	Quelle est la famille de l'entity
+lieuparution	Où est le lieu de publication de l'entity
+adresse	Où est l'entity
+nordOuest	Quelle est la zone adjacente au nord-ouest de l'entity
+typeIndépendance	Quel est le type d'entity indépendant
+nord	Quelle est la zone adjacente au nord de l'entity
+membresActuels	Qui est le membre actuel de l'entity
+gestionnaireDePaquets	Quel est le gestionnaire de packages utilisé par l'entity
+comté	Quel est le comté auquel l'entity appartient
+tailleImage	Quelle est la taille d'image de l'entity

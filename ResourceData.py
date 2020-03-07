@@ -4,18 +4,23 @@ class ResourceData:
         self.resouce=resource
         self.confidence=confidence
         self.frequency=frequency
-        self.type=type
+        self.type=type#0En；1Zh；2Fr
+    def __eq__(self, other):
+        return self.resouce==other.resouce and self.type==other.type
+    def __str__(self):
+        return self.resouce+str(self.type)
     def print(self):
-        print(self.resouce, self.confidence, self.frequency)
+        print(self.resouce, self.confidence, self.frequency,self.type)
 
 class TripleData:
-    def __init__(self,list,query):
+    def __init__(self,list,query,t):
         self.resource=[]
         for l in list:
             self.resource.append(l)
         self.tripleQuery=query
         self.calculateWeight()
-        self.type='triple'
+        self.type=t#0En 1Zh 2Fr
+        self.classify='triple'
         self.alignment=set()
         self.answer=[]
         self.answerType=''
@@ -26,13 +31,16 @@ class TripleData:
         self.lanswer=[]
         self.ranswer=[]
 
+    def __eq__(self, other):
+        return self.tripleQuery==other.tripleQuery
+
 
     def setanswer(self,a,type):
         self.answerType=type
         if type==0:
-            self.answer=a
+            self.ranswer=a
         if type==1:
-            self.answer=a
+            self.lanswer=a
         if type==2:
             self.pairanswer=a
             for an in a:
@@ -43,7 +51,7 @@ class TripleData:
 
 
     def print(self):
-        print(self.tripleQuery)
+        print(self.classify+str(len(self.resource))+self.tripleQuery)
         # if self.answerType==2:
         #     print('R!:leftalign:',len(self.leftalignment))
         #     for j in self.leftalignment:
@@ -51,6 +59,8 @@ class TripleData:
         #     print('right :',len(self.rightalignment))
         #     for k in self.rightalignment:
         #         print(k)
+        # else:
+        #     print(self.answer)
     def addalignment(self,a):
         for al in self.alignment:
             if a.sameLeft==al.sameLeft:
@@ -79,12 +89,14 @@ class AlignmentData:
         self.sameLeft=sameL
         self.sameRight=sameR
         self.confidence=con
-        self.type='alignment'
+        self.classify='alignment'
         self.leftTriple=set()
         self.rightTriple=set()
 
     def __eq__(self, other):
         return (self.sameLeft==other.sameLeft and self.sameRight==other.sameRight)or(self.sameLeft==other.sameRight and self.sameRight==other.sameLeft)
+    def __str__(self):
+        return self.sameLeft+self.sameRight
     def print(self):
         print(self.sameLeft+" sameas "+self.sameRight)
         # print('lefttriple:')

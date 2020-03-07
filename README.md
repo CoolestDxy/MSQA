@@ -11,3 +11,7 @@ SPARQL-Based QA model over multilingual KBs.
 	covert the simplified characters to complex characters
 
 	use the stanford parser to get the predicates of the questions
+	
+- 20/03/07
+
+	new dataset, use baidu translate api combined with stanfordParse to analyze resources in step1.

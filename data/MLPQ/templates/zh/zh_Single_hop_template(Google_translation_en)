@@ -1,0 +1,207 @@
+succeededBy	Who is the successor of the entity?
+最大城市名稱	What is the largest city of entity?
+人類發展指數排名	What is the human development index ranking of entity?
+augSun	What is the agricultural output of an entity?
+人類發展指數年份	What is the human development index year for the entity?
+時區	What is the time zone of the entity?
+type	What is the type of entity?
+related	What are the things related to entity?
+city	What is the entity's city?
+水域率百分比	What is the percentage of water area rate for an entity?
+音樂製作	Who is the entity's music producer?
+family	What is the family of the entity?
+os	What is the operating system of the entity?
+genre	What is the type of entity?
+network	What is the network of the entity?
+連載雜誌	What is a serial magazine for an entity?
+所屬團體	What is the entity of the entity?
+leaderTitle	What is the title of the leader of the entity?
+最大湖泊	What is the largest lake of an entity?
+aprSun	
+頻道	What channel does the entity belong to?
+utcOffset	What is the time zone of the entity?
+star	What is the name of the entity's main planet?
+lastSingle	What was the previous single from entity?
+populationRanking	What is the population ranking of the entity?
+國際域名縮寫	What is the international abbreviation of an entity?
+insee	
+album	What is the music album to which the entity belongs?
+source	What is the source of the entity?
+platform	What is the publishing platform for the entity?
+相關團體	What is the related body of the entity?
+seats1Title	What is the Council to which an entity belongs?
+name	What is the name of the entity?
+人均國內生產總值數據	What is the GDP per capita of an entity?
+製作	What is the producer of the entity?
+leaderParty	What is the party of the entity?
+唱片公司	What is the record company website for the entity?
+ジャンル	What is the type of entity?
+人口密度數據	What is the population density data for an entity?
+ordo	
+東南	What is entity southeast?
+lastAlbum	What was entity's last album?
+classis	What is the category of entity?
+使用平臺	What is the use platform of the entity?
+西	What is the west of the entity?
+singleLine	What is the one-line line used by the entity?
+最大行政區名稱	What is the largest administrative region name of an entity?
+maySun	
+prev	Who was the previous entity?
+map	What encoding is used by the entity?
+arrondissement	What is the county where the entity is located?
+before	Who is the previous entity?
+subdivisionRanks	What is the classification level of the entity?
+法律體系	What is the legal system of an entity?
+總人口數據	What is the total population data of the entity?
+corrcyr	
+現任國家元首名字	What is the name of the current head of state of the entity?
+parent	What is the publishing company of the entity?
+東	What is the east of the entity?
+blankName	
+出版社	What is the entity's publisher?
+prefecture	What county is the entity in?
+latd	What is the latitude of the entity?
+subdivisionName	Where is the state of the entity?
+programmingLanguage	What is the programming language used by the entity?
+developer	Who is the developer of the entity?
+任务	What is the task performed by the entity?
+author	Who is the author of the entity?
+region	Where is the entity's area?
+國內生產總值估計年份	What is the estimated GDP year of the entity?
+subdivisionType	What is the type of division of the entity?
+nextAlbum	What is the next album after entity?
+owner	Who is the president of the entity?
+國家名稱	What is the country name of the entity?
+fossilRange	What era is the fossil of the entity?
+successor	What is the successor of the entity?
+league	What is the name of the league in which the entity participates?
+imageFlag	What is the banner image of the entity?
+junSun	
+西北	What is the northwest of the entity?
+人類發展指數等級	What is the human development index level of an entity?
+areaTotalKm	What is the area footprint of an entity in kilometers?
+現任政府首腦名字	What is the name of the current head of government of the entity?
+ground	Where is the entity hosted?
+國家憲法	What is the national constitution of an entity?
+使用平台	What is the use platform of the entity?
+decSun	
+官方文字	What is the official text of the entity?
+channel	What is the TV station that broadcasts the entity?
+國家元首職稱	What is the title of the head of state of the entity?
+next	What is the next award for entity?
+distributor	Who is the entity's distributor?
+postalCodeType	What is the zip code of the entity?
+octSun	
+nativeName	
+最長河流	What is the longest river of an entity?
+國家外文語言	What is the language of the entity's country?
+subdivision	What is the division of the entity?
+政治體制	What is the political system of the entity?
+platformOfOrigin	What is the platformOfOrigin of an entity?
+最高點	Where is the highest point of the entity?
+國家政權	What is the state power of the entity?
+occupation	What is the occupation of the entity?
+populationDensityKm	What is the population density per square kilometer of an entity?
+國內生產總值購買力平價數據	What is the gross domestic product purchasing power parity data of an entity?
+民族	What is the ethnicity of the entity?
+nextSingle	What is the next single from entity?
+國徽文件名	What is the national emblem file name of the entity?
+includedWith	What is the operating system applicable to the entity?
+國土面積數據	What is the land area data of an entity?
+marSun	
+manufacturer	Who is the manufacturer of the entity?
+開發團隊	What is the entity development team?
+sepSun	
+北	What is the north of the entity?
+imageWidth	What is the image width of the entity?
+政治制度三	What is the political system of the entity?
+artist	Who is the artist of the entity?
+longew	What is the longitude of the entity?
+phylum	what is the phylum that entity belongs to
+人均國內生產總值購買力平價數據	What is the average per capita GDP purchasing power of an entity?
+settlementType	What is the type of residence of the entity?
+其他首腦職稱二	What is the second other title of the head of the entity?
+exoplanet	What is an exoplanet of an entity?
+imageCaption	What is the picture description of the entity?
+popDate	What is the demographic date of the entity?
+platforms	What platform is the entity issuing?
+longitude	What is the longitude of the entity?
+regnum	What is the boundary of the entity in the taxonomy level?
+longd	What is the degree of longitude of the entity?
+latns	What is the north-south latitude of the entity's latitude?
+主要宗教	What is the main religion of the entity?
+國家結構形式	What is the state structure of an entity?
+company	What is the entity company?
+人口密度排名	What is the population density ranking of the entity?
+label	What is the label of the entity?
+貨幣單位	What is the currency unit of an entity?
+populationTotal	What is the total population of the entity?
+agency	What is the entity's organization?
+中央政府所在地	Where is the central government of the entity?
+中央銀行	What is the central bank of an entity?
+precededBy	Who is the successor of the entity?
+studio	What is the entity's studio?
+立國日期	What is the date of establishment of an entity?
+website	What is the entity's website?
+所屬	What does the entity belong to?
+janSun	What is the amount of sunshine in January for an entity?
+經紀公司	What is the entity's brokerage company?
+latm	What is the score of the entity's dimension?
+imageSkyline	What is the picture of the entity's skyline?
+面積排名	What is the area ranking of the entity?
+companyType	What is the entity company type?
+國家位置圖片寬度	What is the width of the entity's country location image?
+其他首腦職稱一	What is the first other title of the head of the entity?
+color	What is the color of the entity?
+南	What is the south of the entity?
+imagesize	What is the image size of the entity?
+format	What is the format of the entity?
+官方語言	What is the official language of the entity?
+capital	What is the capital of the entity?
+timezoneDst	What is the daylight saving time of the entity?
+novSun	What is the amount of sunshine for the entity in November?
+position	What is the location of the entity?
+engine	What is the engine of the entity?
+president	Who is the president of the entity?
+國家位置圖片文件名	What is the country location image file name of the entity?
+政治制度二	What is the second political system of an entity?
+caption	What is the description of the entity?
+longm	What is the longitude of the entity?
+timezone	What is the time zone of the entity?
+predecessor	Who is the predecessor of the entity?
+industry	What is the entity's industry?
+plat	What is the platform of the entity?
+國際電話區號	What is the international area code of the entity?
+ui	What is the UI of the entity?
+publisher	What is the issuer of the entity?
+國內生產總值數據	What is the GDP data of the entity?
+title	What is the title of the entity?
+metricFirst	What is the first evaluation criterion for an entity?
+chronology	What is the chronology of an entity?
+人口排名	What is the population ranking of the entity?
+國家首都名稱	What is the capital name of the entity?
+國內生產總值購買力平價估計年份	What is the estimated year of gross domestic product purchasing power parity for the entity?
+after	What's in front of the entity?
+location	Where is the entity?
+latitude	What is the latitude of the entity?
+leaderName	What is the name of the leader of the entity?
+postalCode	What is the zip code of the entity?
+area	What is the area of the entity?
+imageMap	What is the image mapping of the entity?
+aircraftType	What is the aircraft type of the entity?
+julSun	What is the amount of sunshine for the entity in July?
+cctld	What is the country top-level domain of the entity?
+country	What is the country of the entity?
+operatingSystem	What is the operating system of the entity?
+canton	What is the county where the entity is located?
+fromAlbum	What is the album the entity belongs to?
+國旗文件名	What is the flag file name of the entity?
+動畫製作	Who is the animation of the entity?
+populationAsOf	What is the population of the entity to a certain year?
+population	What is the population of entity?
+febSun	What is the amount of sunshine for the entity in February?
+国家政权	What is the state power of the entity?
+曆法	What is the calendar used by the entity?
+seats2Title	What is the second-level name of an entity?
+政府首腦職稱	What is the title of the head of government of the entity?
+人類發展指數	What is the human development index of an entity?
